@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.ReviewsSection {
+    margin-top: 20px;
+    padding: 20px 80px;
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 1500px;
+    margin: 25px auto 0 auto;
+}
+
+.titleHeader {
+    display: inline;
+    font-size: 30px;
+    background-color: #00AEEF;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    height: 350px;
+    margin: 10px;
+    background-color: #1A1A1A;
+    border-radius: 45px;
+    transition: 0.3s ease-out;
+    color: rgb(202, 201, 201);
+    box-shadow: 0 0 10px black;
+}
+
+.review_title {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.review_subtitle {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.personReview {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.personData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.personImage img {
+    width: 50px;
+}
+
+:global(.splide__slide.is-next) .review {
+    background-color: #00AEEF;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Padding */
+
+@media screen and (max-width: 800px) {
+    .ReviewsSection {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ReviewsSection {
+        padding: 10px 20px;
+    }
+}
+
+/* Review */
+
+@media screen and (max-width: 1100px) {
+    .review_title {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .review_subtitle {
+        font-size: 17px;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .review_title {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .review_subtitle {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .personData p:nth-child(2) {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .review_title {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .review_subtitle {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .personData p:nth-child(2) {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .review_title {
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+
+    .review_subtitle {
+        font-size: 17px;
+        padding: 10px 0;
+    }
+
+    .personData p:nth-child(2) {
+        font-size: 16px;
+    }
+
+}
+
+/* header */
+
+@media screen and (max-width: 1060px) {
+
+    .titleHeader {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .titleHeader {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titleHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+
+
+}

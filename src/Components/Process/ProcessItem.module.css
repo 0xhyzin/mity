@@ -1,0 +1,147 @@
+.processData {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 15px 40px;
+    box-shadow: 0 5px 0px black;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    transition: 0.5s ease-out;
+}
+
+.processData.open {
+    background-color: #00AEEF;
+}
+
+.processData button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid;
+}
+
+
+.DataContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.DataContainer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 15px);
+    border-radius: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.421);
+}
+
+.DataContainer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 90px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.processAnswer {
+    font-weight: 500;
+}
+
+.processAnswer p {
+    padding-top: 40px;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.numper {
+    font-size: 40px;
+}
+
+.title {
+    font-size: 22px;
+    padding: 0 20px;
+    font-weight: 900;
+}
+
+.iconBtn {
+    font-size: 30px;
+}
+
+/* Process */
+
+@media screen and (max-width: 1100px) {
+
+    .processData {
+        padding: 15px 40px;
+        margin-bottom: 30px;
+    }
+
+
+    .DataContainer button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .processAnswer p {
+        padding-top: 40px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .data {
+        gap: 20px;
+    }
+
+    .numper {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 20px;
+        padding: 0 20px;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .data {
+        gap: 10px;
+    }
+
+    .numper {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 18px;
+        padding: 0 10px;
+        font-weight: 900;
+    }
+
+    .processAnswer p {
+        padding-top: 40px;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}

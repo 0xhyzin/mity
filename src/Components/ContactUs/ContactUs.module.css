@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.ContactUsSection {
+    padding: 20px 80px;
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 1500px;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+.header h2 {
+    font-size: 30px;
+    background-color: #00AEEF;
+    padding: 5px 8px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    width: 40%;
+}
+
+/* Padding */
+
+@media screen and (max-width: 800px) {
+    .ContactUsSection {
+        padding: 20px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ContactUsSection {
+        padding: 20px 20px 0 20px;
+    }
+}
+
+
+/* header */
+
+@media screen and (max-width: 1060px) {
+
+    .header h2 {
+        font-size: 27px;
+    }
+
+    .header p {
+        font-size: 17px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+
+    .header h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    .header p {
+        font-size: 17px;
+        width: 100%;
+    }
+}
+
+/* Style */
+
+.container {
+    background-color: #1A1A1A;
+    padding: 50px 30px;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+}
+
+/* info */
+
+.info {
+    width: 50%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.info h2 {
+    font-size: 50px;
+    width: 80%;
+    color: rgb(197, 197, 197);
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+}
+
+.contactsInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contactInfo h3 {
+    font-size: 26px;
+    color: rgb(197, 197, 197);
+    margin-bottom: 20px;
+}
+
+.contactInfo p {
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+}
+
+.contactInfo a {
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1A1A1A;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .info h2 {
+        font-size: 40px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        font-size: 19px;
+    }
+
+    .contactInfo h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .contactInfo p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+
+    .info h2 {
+        font-size: 35px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        font-size: 17px;
+    }
+
+    .contactInfo h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contactInfo p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .info h2 {
+        font-size: 40px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        font-size: 19px;
+    }
+
+    .contactInfo h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contactInfo p {
+        font-size: 20px;
+    }
+
+    .contactsInfo {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .info h2 {
+        font-size: 35px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        font-size: 17px;
+    }
+
+    .contactInfo p {
+        font-size: 20px;
+    }
+
+    .contactsInfo {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contactInfo a {
+        font-size: 25px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .info h2 {
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        font-size: 17px;
+    }
+
+    .contactInfo p {
+        font-size: 20px;
+    }
+
+    .contactsInfo {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}
+
+
+/* Form */
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.formContainer {
+    background-color: #DEDEE0;
+    padding: 60px 50px;
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.form h3 {
+    font-size: 30px;
+}
+
+.form p {
+    font-size: 18px;
+    padding: 20px 0;
+
+}
+
+.infoForm {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 10px 5px 5px;
+    width: 100%;
+    display: block;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #00afefb5;
+    color: black;
+    font-weight: 700;
+}
+
+.label {
+    position: absolute;
+    font-weight: 700;
+    left: 5px;
+    top: 5px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: rgb(67, 67, 67);
+    font-size: 20px;
+}
+
+.input:focus~.label,
+.input:not(:placeholder-shown)~.label {
+    top: -15px;
+    font-size: 18px;
+    color: rgb(67, 67, 67);
+}
+
+.SendBtn {
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #00AEEF;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .formContainer {
+        padding: 60px 40px;
+        width: 90%;
+    }
+
+    .form h3 {
+        font-size: 25px;
+    }
+
+    .form p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+
+    .formContainer {
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+    .form h3 {
+        font-size: 25px;
+    }
+
+    .form p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .formContainer {
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+    .form {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .form h3 {
+        font-size: 30px;
+    }
+
+    .form p {
+        font-size: 18px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 18px;
+    }
+
+    .input:focus~.label,
+    .input:not(:placeholder-shown)~.label {
+        top: -12px;
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .formContainer {
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .formContainer {
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .form h3 {
+        font-size: 27px;
+    }
+
+    .form p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .formContainer {
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form h3 {
+        font-size: 25px;
+    }
+
+    .form p {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .input {
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .label {
+        left: 38px;
+        font-size: 17px;
+    }
+
+    .input:focus~.label,
+    .input:not(:placeholder-shown)~.label {
+        top: -12px;
+        font-size: 16px;
+    }
+
+    .SendBtn {
+        font-weight: 600;
+        font-size: 16px;
+        width: 250px;
+        margin: auto;
+        padding: 15px 15px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .SendBtn {
+        width: 200px;
+    }
+
+    .form h3 {
+        font-size: 22px;
+    }
+
+    .form p {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+}

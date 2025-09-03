@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.AchievementsSection {
+    padding: 20px 80px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 25px;
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.Achievement {
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+}
+
+.Achievement::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 4px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.Achievement::before {
+    content: "";
+    position: absolute;
+    left: calc(100% + 13px);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #00AEEF;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.Achievement:nth-child(1)::before {
+    top: 25%;
+}
+
+.Achievement:nth-child(2)::before {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Achievement:nth-child(3)::before {
+    top: 65%;
+}
+
+
+.Achievement:last-child::after,
+.Achievement:last-child::before {
+    display: none;
+}
+
+.Achievement h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00AEEF;
+}
+
+.Achievement p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    .AchievementsSection {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .AchievementsSection {
+        padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .Achievement h3 {
+        font-size: 45px;
+        font-weight: bold;
+        color: #00AEEF;
+    }
+
+    .Achievement p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .AchievementsSection {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .Achievement:nth-child(2)::after,
+    .Achievement:nth-child(2)::before {
+        display: none;
+    }
+
+    .Achievement:nth-child(1)::before,
+    .Achievement:nth-child(3)::before {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .Achievement h3 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #00AEEF;
+    }
+
+    .Achievement p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .AchievementsSection {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .Achievement h3 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #00AEEF;
+    }
+
+    .Achievement p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .Achievement::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: calc(100% + 25px);
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        background-color: #ccc;
+    }
+
+
+    .Achievement::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 25px);
+        transform: translateX(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #00AEEF;
+        z-index: 1;
+    }
+
+    .Achievement:nth-child(2)::after,
+    .Achievement:nth-child(2)::before {
+        display: block;
+    }
+
+    .Achievement:nth-child(1)::before,
+    .Achievement:nth-child(2)::before,
+    .Achievement:nth-child(3)::before {
+        top: calc(100% + 26px);
+    }
+
+    .Achievement:nth-child(1)::before {
+        left: 20%;
+    }
+
+    .Achievement:nth-child(3)::before {
+        left: 80%;
+    }
+
+    .Achievement {
+        padding: 0 15px;
+        position: relative;
+        width: 250px;
+    }
+}
