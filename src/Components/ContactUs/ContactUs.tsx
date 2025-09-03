@@ -41,12 +41,12 @@ const ContactUs = () => {
                     from_email: formData.email,
                     subject: formData.subject,
                     message: formData.message,
-                    to_email: "mityagency@gmail.com",
+                    to_email: "mity@mity.site",
                 },
                 "z-TVaD2bUIYgWrJYp"
             )
             .then(
-                (result) => {
+                () => {
                     alert("Your message was sent successfully.");
 
                     setFormData({
@@ -57,7 +57,7 @@ const ContactUs = () => {
                     });
                     setLoading(false);
                 },
-                (error) => {
+                () => {
                     alert("An error occurred while sending your message. Please try again.");
 
                     setLoading(false);
@@ -79,7 +79,7 @@ const ContactUs = () => {
                         <div className={classes.contactsInfo}>
                             <div className={classes.contactInfo}>
                                 <h3>Email</h3>
-                                <p>mityagency@gmail.com</p>
+                                <p>mity@mity.site</p>
                             </div>
                             <div className={classes.contactInfo}>
                                 <h3>Follow Us</h3>
