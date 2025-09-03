@@ -41,7 +41,7 @@ const ContactUs = () => {
                     from_email: formData.email,
                     subject: formData.subject,
                     message: formData.message,
-                    to_email: "mity@mity.site",
+                    to_email: "mityagency@gmail.com",
                 },
                 "z-TVaD2bUIYgWrJYp"
             )
@@ -79,7 +79,7 @@ const ContactUs = () => {
                         <div className={classes.contactsInfo}>
                             <div className={classes.contactInfo}>
                                 <h3>Email</h3>
-                                <p>mity@mity.site</p>
+                                <p>mityagency@gmail.com</p>
                             </div>
                             <div className={classes.contactInfo}>
                                 <h3>Follow Us</h3>
