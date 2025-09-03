@@ -7,6 +7,7 @@ import Hero from "./Components/Hero/Hero";
 import Process from "./Components/Process/Process";
 import Reviews from "./Components/Reviews/Reviews";
 import Services from "./Components/Services/Services";
+import { FaArrowUp } from "react-icons/fa";
 
 const App = () => {
 
@@ -16,6 +17,12 @@ const App = () => {
 
   return (
     <>
+      <button className="BtnToTopPage"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+
+        }}
+      ><FaArrowUp /></button>
       <Header />
       <Hero />
       <About />
